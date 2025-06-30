@@ -1,0 +1,16 @@
+class Solution(object):
+    def differenceOfSums(self, n, m):
+        """
+        :type n: int
+        :type m: int
+        :rtype: int
+        """
+        ds,us=0,0
+        for i in range(1,n+1):
+            if i>=m and i%m==0:
+                ds+=i
+            else:
+                us+=i
+        return us-ds
+
+        
