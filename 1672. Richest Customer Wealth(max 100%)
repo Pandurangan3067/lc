@@ -1,0 +1,11 @@
+class Solution(object):
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
+        r=[]
+        for cus in accounts:
+            r+=[sum(cus)]
+        return max(r)
+        
